@@ -1,0 +1,13 @@
+type Cost {
+  id: String
+  parentId: String
+  name: String
+  createdAt: String
+  cost: Float
+  children: [Cost]
+}
+
+type Query {
+  calculateCost: [Cost]
+}
+
